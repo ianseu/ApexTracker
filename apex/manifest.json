@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Apex Tracker",
   "version": "1.0",
-  "description": "Light-weight browser extension to track cryptocurrency prices and set up price alerts!",
+  "description": "Track cryptocurrency prices and set price alerts for your favorite coins!",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -15,5 +15,11 @@
     "16": "icons/icon.png",
     "48": "icons/icon.png",
     "128": "icons/icon.png"
-  }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.coingecko.com/*"
+  ]
 }
