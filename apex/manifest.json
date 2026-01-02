@@ -18,8 +18,5 @@
   },
   "permissions": [
     "storage"
-  ],
-  "host_permissions": [
-    "https://api.coingecko.com/*"
   ]
 }

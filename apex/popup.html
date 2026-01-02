@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="popup.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="title">
-            <img class="logo" src="/icons/icon_no_bg.png">
-            <p class="title-text">Apex Tracker</p>
+        <!-- Main View -->
+        <div id="main-view" class="view active">
+            <div class="title">
+                <img class="logo" src="/icons/icon_no_bg.png">
+                <p class="title-text">Apex Tracker</p>
+            </div>
+            <hr class="title-divider">
+            <div class="tracking-text">
+                <p>Currently tracking:</p>
+                <p id="tracked"></p>
+            </div>
+            <div class="menu-btns">
+                <button class="add-currency-btn" id="add-currency-btn">Add Currency</button>
+                <button class="price-alerts-btn" id="price-alerts-btn">Price Alerts</button>
+            </div>
         </div>
-       
-        <hr class="title-divider">
-        <div class="tracking-text">
-            <p>Currently tracking:</p>
-            <p id="tracked"></p>
+
+        <!-- Add Currency View -->
+        <div id="add-currency-view" class="view">
+            <button class="back-arrow">🡠</button>
+            <div class="title">
+                <p class="title-text">Add Currency</p>
+            </div>
+            <hr class="title-divider">
         </div>
+
+        <!-- Price Alerts View -->
+        <div id="price-alerts-view" class="view">
+            <button class="back-arrow">🡠</button>
+            <div class="title">
+                <p class="title-text">Price Alerts</p>
+            </div>
+            <hr class="title-divider">
+        </div>
+        <script src="supported_currencies.js"></script>
         <script src="popup.js"></script>
-        <button class="add-currency-btn">Add Currency</button>
     </body>
-    
 </html>

@@ -8,8 +8,17 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
+/*Views*/
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+}
 
 /*Title*/
 .title {
@@ -36,6 +45,7 @@ body {
   border: none;
   width: 80%; 
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 auto 2px;
 }
 
 /*Tracking Text*/
@@ -47,15 +57,21 @@ body {
   padding: 0 15px;
 }
 
-/*Add Currency Button*/
-.add-currency-btn {
+/*Buttons*/
+.menu-btns {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 8%;
+}
+
+.add-currency-btn, .price-alerts-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 35px;
   background-color: rgb(122, 166, 202);
-  margin: 8px auto 0;
+  margin: 8px 4px 0;
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   color: #ffffff;
@@ -63,5 +79,23 @@ body {
   border-radius: 12px;
 }
 
+.add-currency-btn {
+  background-color: rgb(122, 166, 202);
+}
 
+.price-alerts-btn {
+  background-color: rgb(226, 185, 0);
+}
 
+/*Back Button*/
+.back-arrow {
+  position: absolute;
+  text-align: center;
+  top: 8px;
+  left: 8px;
+  height: 8%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+}
