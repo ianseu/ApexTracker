@@ -1,9 +1,10 @@
 
-# Apex  Tracker
+# Apex  Tracker 
+*(currently still in development)*
 
-A minimal, performance-focused Chromium browser extension that enables users to monitor real-time cryptocurrency prices and receive instant notifications when their specified price targets are reached.
+A minimal, performance-focused Chromium browser extension that enables users to monitor real-time cryptocurrency prices and receive instant notifications when their specified price targets are reached. API calls are handled right out of the box, no need to get your own key!
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/ianseu/ApexTracker)    [![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md)  [![Chrome Web Store](https://img.shields.io/badge/chrome-extension-brightgreen.svg)](https://chromewebstore.google.com/)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/ianseu/ApexTracker) [![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md) [![Chrome Web Store](https://img.shields.io/badge/chrome-extension-brightgreen.svg)](https://chromewebstore.google.com/)
 
 ## Installation
 
@@ -22,7 +23,14 @@ A minimal, performance-focused Chromium browser extension that enables users to 
 - If successful, the extension will appear in the `Extensions` menu on your browser's tab bar where you can open and/or pin it.
 
 - To remove the extension you can click the 3 dots on the right of the extension pin icon and choose `Remove from BROWSER-NAME`.
+
+## Credits
+
+[spothq/cryptocurrency-icons](https://github.com/spothq/cryptocurrency-icons)
+[Coinbase API](https://docs.cdp.coinbase.com/)
      
 ## License
 
 [MIT](./LICENSE.md)
+
+
